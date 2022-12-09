@@ -15,6 +15,15 @@ public:
 	// Sets default values for this actor's properties
 	AMyActor();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Damage")
+	int32 i32;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Damage")
+	float f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Transient,Category="Damage")
+	FString fstr;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool b;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
